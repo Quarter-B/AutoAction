@@ -95,6 +95,5 @@ def situyun():
         saveFile("司徒云签到代码存在异常")
 if __name__ == '__main__':
     scut()
-    situyun()
     # 脚本运行成功,退出浏览器
     browser.quit()
