@@ -5,7 +5,7 @@ on:
     types: started
   push:
   schedule:
-    - cron: '0 21 * * *'
+    - cron: '0 22 * * *'
 
 jobs:
   bot:
@@ -36,8 +36,6 @@ jobs:
           env:
             SCUT_USER: ${{ secrets.SCUT_USER }}
             SCUT_PASSWORD: ${{ secrets.SCUT_PASSWORD }}
-            SITUYUN_USER: ${{ secrets.SITUYUN_USER }}
-            SITUYUN_PASSWORD: ${{ secrets.SITUYUN_PASSWORD }}
           run: python autoclick.py
         - name: 'Send mail'
           uses: dawidd6/action-send-mail@master
